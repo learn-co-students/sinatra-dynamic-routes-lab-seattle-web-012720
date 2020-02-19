@@ -1,0 +1,13 @@
+<% if @operation == 'add'
+    answer = @num1.to_i + @num2.to_i
+elsif @operation == 'subtract'
+    answer = @num1.to_i - @num2.to_i
+elsif @operation == 'multiply'
+    answer = @num1.to_i * @num2.to_i
+elsif @operation == 'divide'
+    answer = @num1.to_i / @num2.to_i
+else 
+    answer = <%= "Unable to perform this operation" %>
+end%>
+<%= answer.to_s %>
+
