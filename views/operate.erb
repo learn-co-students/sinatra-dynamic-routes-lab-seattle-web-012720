@@ -1,0 +1,10 @@
+<% if @operation == 'add' %>
+<% num3 = @num1.to_i + @num2.to_i %>
+<% elsif @operation == 'subtract' %>
+<% num3 = @num1.to_i - @num2.to_i%>
+<% elsif @operation == 'multiply' %>
+<% num3 = @num1.to_i * @num2.to_i%>
+<% elsif @operation == 'divide' %>
+<% num3 = @num1.to_i / @num2.to_i%>
+<% end %>
+<h2><%= num3 %></h2>
