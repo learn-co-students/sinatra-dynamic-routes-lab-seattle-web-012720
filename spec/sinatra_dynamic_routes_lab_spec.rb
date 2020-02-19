@@ -14,7 +14,7 @@ describe App do
 
     it "isn't hard-coded" do
       get '/reversename/joseph'
-
+      
       expect(last_response.body).to include('hpesoj')
       expect(last_response.body).to_not include('airotciv')
     end
