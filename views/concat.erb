@@ -1,0 +1,3 @@
+<% @words = [ ] %>
+<% params.each_value{|word| @words << word} %>
+<%= "#{@words.join(" ")}." %>
